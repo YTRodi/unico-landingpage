@@ -17,6 +17,9 @@ module.exports = {
   plugins: ['react'],
   rules: {
     'no-console': ['error', { allow: ['error'] }],
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
+    'arrow-body-style': 'warn',
     // React:
     'react/self-closing-comp': 'warn',
     'react/jsx-sort-props': [

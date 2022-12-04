@@ -15,7 +15,6 @@
   font-weight: bold;
 }
 
-/* a:hover, a:active{
-  color: gradient
- }
-  */
+* {
+  @apply font-gilroy;
+}
