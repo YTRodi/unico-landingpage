@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import { ReactNode } from 'react';
 
 interface Props {
@@ -6,7 +7,16 @@ interface Props {
 }
 
 const HighlightedText = ({ children, backgroundColor = 'pink' }: Props) => (
-  <strong className={`highlight highlight__${backgroundColor}`}>
+  <strong
+    className={cn([
+      'highlight',
+      {
+        highlight__pink: backgroundColor === 'pink',
+        highlight__purple: backgroundColor === 'purple',
+        highlight__yellow: backgroundColor === 'yellow',
+      },
+    ])}
+  >
     {children}
   </strong>
 );
