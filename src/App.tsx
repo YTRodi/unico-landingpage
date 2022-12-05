@@ -1,9 +1,10 @@
-import { MainLayout, Navbar } from './components';
+import { Hero, MainLayout, Navbar } from './components';
 
 function App() {
   return (
     <MainLayout>
       <Navbar />
+      <Hero />
     </MainLayout>
   );
 }

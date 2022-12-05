@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Normal */
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-Light.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+/* Medium */
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-Medium.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 500;
+}
+/* Semi bold */
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-Semibold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 600;
+}
+/* Bold */
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-Bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+}
+/* Extra bold */
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-ExtraBold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 800;
+}
+
+@layer utilities {
+  .highlight {
+    position: relative;
+
+    &:before {
+      @apply content-[''] absolute w-[97%] h-[60%] bottom-0.5 -z-10;
+    }
+    &__pink:before {
+      @apply bg-pink-light;
+    }
+    &__purple:before {
+      @apply bg-purple-light;
+    }
+    &__yellow:before {
+      @apply bg-yellow-light;
+    }
+  }
+}
+
+* {
+  @apply font-gilroy;
+}
