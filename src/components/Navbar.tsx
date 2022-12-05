@@ -7,7 +7,9 @@ interface Props {
 }
 
 const Navbar = ({ showContactUsButton = true }: Props) => (
-  <nav className="flex justify-between mt-10">
+  <nav
+    className={`fixed top-10 right-[11.75rem] left-[11.75rem] flex justify-between`}
+  >
     <Logo />
     <div className="flex gap-10 items-center">
       <NavLinks />
