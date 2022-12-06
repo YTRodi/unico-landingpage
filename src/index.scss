@@ -55,8 +55,38 @@
       @apply bg-yellow-light;
     }
   }
+
+  .tag {
+    @apply font-bold tracking-[.32em] uppercase;
+  }
 }
 
 * {
   @apply font-gilroy;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  @apply font-medium;
+}
+
+h1 {
+  @apply text-5xl text-gray-dark;
+}
+
+h2 {
+  @apply text-4xl text-gray-dark;
+}
+
+h5 {
+  @apply text-xl;
+}
+
+p {
+  @apply text-gray-light leading-7;
 }
