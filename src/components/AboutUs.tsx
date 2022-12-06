@@ -1,3 +1,4 @@
+import Arrow from './Arrow';
 import Button from './Button';
 import HighlightedText from './HighlightedText';
 
@@ -21,8 +22,7 @@ const AboutUs = () => (
           building lasting relationships in a world that is trust deficit.
         </p>
         <Button className="flex justify-center items-center gap-2.5">
-          More Details
-          <img alt="arrow" src="/arrow.png" />
+          More Details <Arrow />
         </Button>
       </div>
     </div>
