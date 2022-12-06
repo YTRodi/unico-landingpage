@@ -84,9 +84,13 @@ h2 {
 }
 
 h5 {
-  @apply text-xl;
+  @apply font-bold text-xl;
 }
 
 p {
   @apply text-gray-light leading-7;
+}
+
+a {
+  @apply text-xl font-semibold;
 }
