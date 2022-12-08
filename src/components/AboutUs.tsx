@@ -7,7 +7,7 @@ const AboutUs = () => (
     <img alt="about us photo" src="/about-us.png" />
     <div className="flex flex-col gap-6">
       <div className="flex flex-col gap-2.5">
-        <h4 className="tag text-yellow">ABOUT US</h4>
+        <h6 className="tag text-yellow">ABOUT US</h6>
         <h2>
           <HighlightedText backgroundColor="pink">Together</HighlightedText>, We
           Think Big

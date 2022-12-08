@@ -22,7 +22,7 @@ const OurServices = () => (
 // TODO: Maybe create a HeaderSection component ???
 const BlockOneHeader = () => (
   <div className="max-w-[31.25rem] flex gap-4 flex-col  items-center">
-    <h4 className="tag text-yellow">OUR SERVICES</h4>
+    <h6 className="tag text-yellow">OUR SERVICES</h6>
     <h2>
       What We <HighlightedText backgroundColor="purple">Do?</HighlightedText>
     </h2>

@@ -31,7 +31,7 @@ const ServiceCard = ({
         }[backgroundColor],
       ])}
     >
-      <img alt="Doing Card" src={iconSrc} />
+      <img alt="Service Card" src={iconSrc} />
     </div>
     <div className="py-8 flex gap-3 flex-col">
       <h5>{title}</h5>

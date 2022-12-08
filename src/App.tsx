@@ -1,5 +1,6 @@
 import {
   AboutUs,
+  Clients,
   Hero,
   MainLayout,
   Navbar,
@@ -15,6 +16,7 @@ function App() {
       <AboutUs />
       <Team />
       <OurServices />
+      <Clients />
     </MainLayout>
   );
 }

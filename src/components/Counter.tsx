@@ -10,7 +10,7 @@ const Counter = ({ title, body }: Props) => {
   return (
     <div className="flex flex-col items-center">
       <h2 className={`font-bold ${commonClassnames}`}>{title}</h2>
-      <h4 className={commonClassnames}>{body}</h4>
+      <h6 className={commonClassnames}>{body}</h6>
     </div>
   );
 };
