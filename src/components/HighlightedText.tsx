@@ -1,9 +1,11 @@
 import cn from 'classnames';
 import { ReactNode } from 'react';
 
+import { BackgroundColor } from '~/types';
+
 interface Props {
   children: ReactNode;
-  backgroundColor?: 'pink' | 'purple' | 'yellow';
+  backgroundColor?: BackgroundColor;
 }
 
 const HighlightedText = ({ children, backgroundColor = 'pink' }: Props) => (
@@ -11,10 +13,10 @@ const HighlightedText = ({ children, backgroundColor = 'pink' }: Props) => (
     className={cn([
       'highlight',
       {
-        highlight__pink: backgroundColor === 'pink',
-        highlight__purple: backgroundColor === 'purple',
-        highlight__yellow: backgroundColor === 'yellow',
-      },
+        pink: 'highlight__pink',
+        purple: 'highlight__purple',
+        yellow: 'highlight__yellow',
+      }[backgroundColor],
     ])}
   >
     {children}
