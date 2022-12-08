@@ -17,8 +17,10 @@ const Button = ({ className, variant = 'primary', ...rest }: Props) => {
         'rounded-[10px]',
         'text-white',
         'font-bold',
-        { 'bg-pink shadow-pink/50': variant === 'primary' },
-        { 'bg-purple shadow-purple/50': variant === 'secondary' },
+        {
+          primary: 'bg-pink shadow-pink/50',
+          secondary: 'bg-purple shadow-purple/50',
+        }[variant],
         'shadow-2xl',
       ])}
       {...rest}

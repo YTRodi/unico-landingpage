@@ -83,8 +83,12 @@ h2 {
   @apply text-4xl text-gray-dark;
 }
 
+h4 {
+  @apply text-lg;
+}
+
 h5 {
-  @apply font-bold text-xl;
+  @apply text-xl font-bold;
 }
 
 p {
@@ -92,5 +96,5 @@ p {
 }
 
 a {
-  @apply text-xl font-semibold;
+  @apply text-base font-semibold cursor-default;
 }

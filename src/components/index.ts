@@ -10,3 +10,6 @@ export { default as Team } from './Team';
 export { default as MemberCard } from './MemberCard';
 export { default as Arrow } from './Arrow';
 export { default as Link } from './Link';
+export { default as OurServices } from './OurServices';
+export { default as ServiceCard } from './ServiceCard';
+export { default as Counter } from './Counter';
