@@ -16,7 +16,7 @@ const Team = () => (
 
 const Header = () => (
   <div className="flex gap-4 flex-col items-center">
-    <h4 className="tag text-yellow">TEAM</h4>
+    <h6 className="tag text-yellow">TEAM</h6>
     <h2>
       Meet Our <HighlightedText backgroundColor="yellow">Team</HighlightedText>
     </h2>

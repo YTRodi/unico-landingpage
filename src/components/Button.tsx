@@ -11,7 +11,6 @@ const Button = ({ className, variant = 'primary', ...rest }: Props) => {
   return (
     <button
       className={cn([
-        classNameFromProps,
         'py-3',
         'px-7',
         'rounded-[10px]',
@@ -22,6 +21,7 @@ const Button = ({ className, variant = 'primary', ...rest }: Props) => {
           secondary: 'bg-purple shadow-purple/50',
         }[variant],
         'shadow-2xl',
+        classNameFromProps,
       ])}
       {...rest}
     />
