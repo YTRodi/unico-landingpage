@@ -1,3 +1,4 @@
+import { Props as Counter } from '~/components/Counter';
 import { Props as Service } from '~/components/ServiceCard';
 
 const SERVICES: Array<Omit<Service, 'iconSrc'>> = [
@@ -18,4 +19,11 @@ const SERVICES: Array<Omit<Service, 'iconSrc'>> = [
   },
 ];
 
-export { SERVICES };
+const COUNTERS: Counter[] = [
+  { title: '+30', body: 'Locations' },
+  { title: '+90', body: 'Users' },
+  { title: '+300', body: 'Projects' },
+  { title: '9', body: 'Years of growth' },
+];
+
+export { SERVICES, COUNTERS };
