@@ -1,15 +1,17 @@
 import ClientCard from './ClientCard';
 import HighlightedText from './HighlightedText';
+import Paginator from './Paginator';
 
-import { CLIENTS } from '~/constants';
+import { CLIENTS, COMPANIES_LOGOS } from '~/constants';
 
 const Clients = () => (
-  <div className="h-screen flex gap-16 flex-col justify-center items-center">
+  <div className="h-screen flex gap-16 flex-col justify-end items-center">
     <div className="flex gap-6 flex-col justify-center items-center">
       <Header />
-      <TeamMemberCards />
+      <ClientCards />
     </div>
-    {/* <Link>View All</Link> */}
+    <Paginator />
+    <Companies />
   </div>
 );
 
@@ -25,14 +27,22 @@ const Header = () => (
   </div>
 );
 
-const TeamMemberCards = () => (
+const ClientCards = () => (
   <div className="flex gap-12 justify-center items-center">
     {CLIENTS.map((client, index) => {
-      const src = `/clients/client-${index}.svg`;
+      const src = `/avatars/client-${index}.svg`;
       const props = { clientImgSrc: src, ...client };
 
       return <ClientCard key={index} {...props} />;
     })}
+  </div>
+);
+
+const Companies = () => (
+  <div className="w-full flex justify-between items-center py-6">
+    {COMPANIES_LOGOS.map((company, index) => (
+      <img key={index} alt={company} src={`/clients/${company}.svg`} />
+    ))}
   </div>
 );
 

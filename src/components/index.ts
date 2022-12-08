@@ -15,3 +15,5 @@ export { default as ServiceCard } from './ServiceCard';
 export { default as Counter } from './Counter';
 export { default as Clients } from './Clients';
 export { default as ClientCard } from './ClientCard';
+export { default as Dot } from './Dot';
+export { default as Paginator } from './Paginator';

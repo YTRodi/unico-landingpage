@@ -23,4 +23,13 @@ const CLIENTS: Array<Omit<Client, 'clientImgSrc'>> = [
   },
 ];
 
-export { CLIENTS };
+const COMPANIES_LOGOS = [
+  'airbnb',
+  'hubspot',
+  'google',
+  'microsoft',
+  'walmart',
+  'fedex',
+];
+
+export { CLIENTS, COMPANIES_LOGOS };
