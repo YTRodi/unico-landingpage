@@ -10,7 +10,6 @@ const NavLinks = () => (
         <li key={index}>
           <a
             className={`font-semibold transition-all hover:text-pink ${conditionalStyle}`}
-            href="/"
           >
             {to}
           </a>
