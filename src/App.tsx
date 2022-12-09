@@ -1,6 +1,7 @@
 import {
   AboutUs,
   Clients,
+  Footer,
   Hero,
   MainLayout,
   Navbar,
@@ -8,8 +9,8 @@ import {
   Team,
 } from './components';
 
-function App() {
-  return (
+const App = () => (
+  <div>
     <MainLayout>
       <Navbar />
       <Hero />
@@ -18,7 +19,8 @@ function App() {
       <OurServices />
       <Clients />
     </MainLayout>
-  );
-}
+    <Footer />
+  </div>
+);
 
 export default App;
