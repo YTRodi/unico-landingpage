@@ -1,8 +1,11 @@
 import Button from './Button';
 import HighlightedText from './HighlightedText';
 
+// 3rem = MainLayout padding top
+// 3.125rem = Navbar height
+
 const Hero = () => (
-  <div className="flex gap-20 items-center justify-between h-screen">
+  <div className="flex gap-20 items-center justify-between h-[calc(100vh-3rem-3.125rem)]">
     <div className="flex flex-col justify-center items-start gap-12 max-w-[528px]">
       <div className="flex flex-col gap-5">
         <h1>

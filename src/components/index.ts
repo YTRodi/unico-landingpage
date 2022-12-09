@@ -17,3 +17,5 @@ export { default as Clients } from './Clients';
 export { default as ClientCard } from './ClientCard';
 export { default as Dot } from './Dot';
 export { default as Paginator } from './Paginator';
+export { default as Footer } from './Footer';
+export { default as Social } from './Social';

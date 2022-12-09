@@ -4,15 +4,14 @@ import NavLinks from './NavLinks';
 
 interface Props {
   showContactUsButton?: boolean;
+  variant?: 'primary' | 'secondary';
 }
 
-const Navbar = ({ showContactUsButton = true }: Props) => (
-  <nav
-    className={`fixed top-10 right-[11.75rem] left-[11.75rem] flex justify-between`}
-  >
-    <Logo />
+const Navbar = ({ showContactUsButton = true, variant = 'primary' }: Props) => (
+  <nav className={`h-[3.125rem] flex justify-between`}>
+    <Logo {...{ variant }} />
     <div className="flex gap-10 items-center">
-      <NavLinks />
+      <NavLinks {...{ variant }} />
       {showContactUsButton && <Button>Contact Us</Button>}
     </div>
   </nav>

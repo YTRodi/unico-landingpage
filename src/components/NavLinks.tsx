@@ -1,6 +1,12 @@
+import cn from 'classnames';
+
 const NAV_LINKS = ['Home', 'About Us', 'Team', 'Our Services', 'Clients'];
 
-const NavLinks = () => (
+interface Props {
+  variant?: 'primary' | 'secondary';
+}
+
+const NavLinks = ({ variant = 'primary' }: Props) => (
   <ul className="flex gap-10 items-center">
     {NAV_LINKS.map((to, index) => {
       const isFirstNavLink = index === 0;
@@ -9,7 +15,16 @@ const NavLinks = () => (
       return (
         <li key={index}>
           <a
-            className={`font-semibold transition-all hover:text-pink ${conditionalStyle}`}
+            className={cn([
+              'font-semibold',
+              'transition-all',
+              'hover:text-pink',
+              {
+                primary: 'text-black',
+                secondary: 'text-white',
+              }[variant],
+              conditionalStyle,
+            ])}
           >
             {to}
           </a>
