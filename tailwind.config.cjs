@@ -3,6 +3,7 @@ module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     colors: {
+      transparent: 'transparent',
       white: '#ffffff',
       black: '#000000',
       pink: {
@@ -19,7 +20,7 @@ module.exports = {
       },
       gray: {
         DEFAULT: '#777B84',
-        light: '#4B4B4B',
+        light: '#4F5665',
         dark: '#323336',
       },
     },
